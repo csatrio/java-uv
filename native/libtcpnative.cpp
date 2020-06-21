@@ -62,7 +62,6 @@ static void after_write(connection c, int status)
 
 static void cleanup_attachment(void *attachment)
 {
-    debug("cleanup attachment");
     if (attachment != NULL)
     {
         attachment_t *a = (attachment_t *)attachment;
@@ -88,7 +87,7 @@ static void on_allocate(uv_handle_t *handle, size_t suggested_size, uv_buf_t *bu
     // Performance is high, because data is directly written into DirectByteBuffer by libuv.
     // This allows us to achive zero copy with single buffer (no buffer list to be maintained, etc).
     if (attachment->bytebuffer == NULL)
-    {    
+    {
         buf->base = (char *)malloc(suggested_size);
         buf->len = suggested_size;
         attachment->buffer_address = buf->base;
