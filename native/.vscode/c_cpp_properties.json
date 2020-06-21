@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/constantinussatrio/jdk/jdk-8u241-linux-x64/jdk1.8.0_241/include/linux",
+                "/home/constantinussatrio/jdk/jdk-8u241-linux-x64/jdk1.8.0_241/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

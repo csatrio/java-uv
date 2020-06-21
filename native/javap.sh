@@ -1,0 +1,1 @@
+find * ../bin/ | grep .class | xargs javap -s -p
